@@ -23,7 +23,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('admin_panel')->group(function () {
     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin'); // /admin
+  //  Route::get('/post', [App\Http\Controllers\Admin\PostController::class, 'create'])->name('postAdmin'); // /admin
+  //  Route::post('/store', [App\Http\Controllers\Admin\PostController::class, 'store'])->name('postAdminCreate');
     //
     // Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
-    // Route::resource('post', App\Http\Controllers\Admin\PostController::class);
+   Route::resource('post', App\Http\Controllers\Admin\PostController::class);
 });

@@ -33,7 +33,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="{{route('homeAdmin')}}" class="brand-link">
       <img src="/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Admin Panel</span>
     </a>
@@ -74,12 +74,12 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{ route('post.index') }}" class="nav-link">
                   <p>All posts</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{ route('post.create') }}" class="nav-link">
                   <p>Add post</p>
                 </a>
               </li>
@@ -101,7 +101,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href=" route('category.create') " class="nav-link">
+                <a href=" route('post.create') " class="nav-link">
                   <p>Add category</p>
                 </a>
               </li>
