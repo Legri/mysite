@@ -21,4 +21,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/admin', 'App\Http\Controllers\AdminController@home')->name('admin-home');
+Route::prefix('admin_panel')->group(function () {
+    Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin'); // /admin
+    //
+    // Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
+    // Route::resource('post', App\Http\Controllers\Admin\PostController::class);
+});
