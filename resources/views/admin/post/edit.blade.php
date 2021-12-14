@@ -37,11 +37,13 @@
                                     <input type="text" value="{{ $post['title'] }}" name="title" class="form-control"
                                         id="exampleInputEmail1" placeholder="Введите название статьи" required>
                                 </div>
-        
+
 
                                 <div class="form-group">
                                     <textarea name="text" class="editor">{{ $post['text'] }}</textarea>
                                 </div>
+
+
 
                                 <div class="form-group">
                                     <label for="feature_image">Изображение статьи</label>
