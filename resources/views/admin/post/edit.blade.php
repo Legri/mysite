@@ -40,7 +40,7 @@
 
 
                                 <div class="form-group">
-                                    <textarea name="text" class="editor">{{ $post['text'] }}</textarea>
+                                    <textarea name="text" class="editor tinymce-editor">{{ $post['text'] }}</textarea>
                                 </div>
 
 
